@@ -1,0 +1,117 @@
+.border-gradient {
+    background: linear-gradient(135deg, #ff9d00, #f000ff);
+  }
+   /* Custom CSS for viewport widths below 330px type effects */
+   @media (max-width: 330px) {
+    .responsive-text {
+      font-size:1rem !important;/* This is equivalent to Tailwind's text-base */
+    }
+  }
+  /* social links  */
+  .fixed-circle-container {
+    position: relative;
+    
+  }
+  
+  .fixed-circle {
+    position: fixed;
+    bottom:1rem;
+    right: 1rem;
+    background-color: #000c1ae7;
+    color: #ffffff;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999; /* Ensure it's above other content */
+    transition: background-color 0.3s;
+  }
+  
+  .fixed-circle:hover {
+    background-color: #00172fc7;
+  }
+  
+  .social-links {
+    z-index:999;
+    position: fixed;
+    bottom:2.5rem;
+    right:3rem;
+    background-color: #ffffff44;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: block; /* Change to display: block */
+  }
+  
+  .social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block; /* Ensure links are displayed as block elements */
+    padding: 0.5rem;
+  }
+  
+  .social-links a:hover {
+    background-color: #4d4d4d67;
+  }
+  .svg-icon {
+    color: #d3d3d3;
+    background-color: #ffffff89;
+    border-radius: 100%;
+    width: 50%;
+  }
+  /* contact text  */
+  .text-gradient {
+    background-image: linear-gradient(
+      120deg,
+      #f6d365,
+      #85fdeb,
+      rgba(255, 0, 0, 0.54)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* buttons */
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .wow-button {
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wow-button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+  }
+  
+  .wow-button:hover::before {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  /* rounded cards  */
+  
+  

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: rgba(0, 0, 0, 0.96);
+  color: rgb(192, 215, 211);
+}
+body {
+  font-family: "Calibri", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Hide vertical scrollbar */
+body::-webkit-scrollbar {
+  width:2px; /* Adjust scrollbar width */
+}
+
+/* Customize scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, rgba(0, 255, 234, 0.514), rgba(255, 106, 0, 0.59)); /* Gradient colors */
+  border-radius: 5px; /* Thumb border radius */
+}
+/* Hide scrollbar on mobile */
+@media (max-width: 768px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
